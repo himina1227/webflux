@@ -1,6 +1,7 @@
 services:
   mariadb:
     image: 'mariadb:latest'
+    restart: always
     environment:
       - 'MARIADB_DATABASE=mydatabase'
       - 'MARIADB_PASSWORD=secret'
